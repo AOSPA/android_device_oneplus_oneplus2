@@ -114,6 +114,8 @@ ro.hwui.text_large_cache_width=3072
 ro.hwui.text_large_cache_height=4096
 
 # QC vendor extension
+ro.core_ctl_min_cpu=2
+ro.core_ctl_max_cpu=4
 ro.vendor.extension_library=libqti-perfd-client.so
 ro.frp.pst=/dev/block/bootdevice/by-name/config
 drm.service.enabled=true
