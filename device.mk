@@ -255,8 +255,5 @@ PRODUCT_PACKAGES += \
     hostapd.accept \
     hostapd.deny
 
-# Inherit from oppo-common
-$(call inherit-product, device/oppo/common/common.mk)
-
 # Inherit oneplus2-specific vendor tree
 $(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
