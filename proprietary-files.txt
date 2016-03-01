@@ -312,13 +312,6 @@ vendor/lib/egl/libq3dtools_esx.so
 etc/firmware/a420_pfp.fw
 etc/firmware/a420_pm4.fw
 
-# keymaster
-vendor/firmware/keymaste.b00
-vendor/firmware/keymaste.b01
-vendor/firmware/keymaste.b02
-vendor/firmware/keymaste.b03
-vendor/firmware/keymaste.mdt
-
 # Listen
 vendor/lib/hw/sound_trigger.primary.msm8994.so
 
