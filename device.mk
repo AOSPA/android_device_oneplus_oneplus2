@@ -262,6 +262,3 @@ PRODUCT_PACKAGES += \
     hostapd_default.conf \
     hostapd.accept \
     hostapd.deny
-
-# Inherit oneplus2-specific vendor tree
-$(call inherit-product, vendor/oneplus/oneplus2/oneplus2-vendor.mk)
