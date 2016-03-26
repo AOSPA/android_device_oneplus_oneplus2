@@ -23,3 +23,4 @@
 /data/misc/fp/metadata                                          u:object_r:fingerprint_metadata:s0
 /data/misc/fp/cac_data                                          u:object_r:fingerprint_data:s0
 /data/misc/fp/sfs(/.*)?                                         u:object_r:fingerprint_data:s0
+/data/misc/perfd(/.*)?                                          u:object_r:mpctl_socket:s0
