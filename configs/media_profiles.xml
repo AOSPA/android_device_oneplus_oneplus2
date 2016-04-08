@@ -463,9 +463,9 @@
 
     <EncoderProfile quality="high" fileFormat="mp4" duration="30">
       <Video codec="h264"
-             bitRate="20000000"
-             width="1920"
-             height="1080"
+             bitRate="14000000"
+             width="1280"
+             height="720"
              frameRate="30" />
 
       <Audio codec="aac"
@@ -523,7 +523,7 @@
          sampleRate="48000"
          channels="2" />
     </EncoderProfile>
-
+<!-- VENDOR_EDIT likelong@camera, 2016/03/03, Modify for CTS, as front camera can't support 1080p recording 
     <EncoderProfile quality="1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="20000000"
@@ -533,10 +533,10 @@
 
       <Audio codec="aac"
              bitRate="156000"
-                   sampleRate="48000"
+             sampleRate="48000"
              channels="2" />
     </EncoderProfile>
-
+-->
     <EncoderProfile quality="qcif" fileFormat="3gp" duration="30">
       <Video codec="h264"
              bitRate="192000"
@@ -580,16 +580,16 @@
 
     <EncoderProfile quality="timelapsehigh" fileFormat="mp4" duration="30">
       <Video codec="h264"
-             bitRate="20000000"
-             width="1920"
-             height="1080"
+             bitRate="8000000"
+             width="1280"
+             height="720"
              frameRate="30" />
 
       <!-- audio setting is ignored -->
       <Audio codec="aac"
-             bitRate="156000"
+             bitRate="96000"
              sampleRate="48000"
-             channels="2" />
+             channels="1" />
     </EncoderProfile>
     <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
         <Video codec="h264"
@@ -670,7 +670,7 @@
                sampleRate="48000"
                channels="1" />
     </EncoderProfile>
-
+<!-- VENDOR_EDIT likelong@camera, 2016/03/03, Modify for CTS, as front camera can't support 1080p recording 
     <EncoderProfile quality="timelapse1080p" fileFormat="mp4" duration="30">
       <Video codec="h264"
              bitRate="20000000"
@@ -678,13 +678,12 @@
              height="1080"
              frameRate="30" />
 
-      <!-- audio setting is ignored -->
       <Audio codec="aac"
              bitRate="156000"
              sampleRate="48000"
              channels="2" />
     </EncoderProfile>
-
+-->
         <ImageEncoding quality="95" />
         <ImageEncoding quality="80" />
         <ImageEncoding quality="70" />
