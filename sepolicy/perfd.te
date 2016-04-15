@@ -1,1 +1,2 @@
 allow perfd self:capability kill;
+allow perfd system_data_file:dir write;
