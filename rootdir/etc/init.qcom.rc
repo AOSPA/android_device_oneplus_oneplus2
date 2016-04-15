@@ -434,10 +434,7 @@ on post-fs-data
 
     # Create folder for perf daemon
     mkdir /data/system/perfd 0770 root system
-    rm /data/system/perfd/default_values
     chmod 2770 /data/system/perfd
-    setprop ro.min_freq_0 384000
-    setprop ro.min_freq_4 384000
 
     # Create directory used by the DASH client
     mkdir /data/misc/dash 0770 media audio
