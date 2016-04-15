@@ -17,4 +17,3 @@
 /dev/i2c-6                                                      u:object_r:audio_device:s0
 
 /data/oemnvitems(/.*)?                                          u:object_r:nv_data_file:s0
-/data/misc/perfd(/.*)?                                          u:object_r:mpctl_socket:s0
