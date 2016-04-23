@@ -410,6 +410,8 @@ on post-fs-data
     mkdir /data/misc/audio/acdbdata/delta 0770 media audio
 
     # Create folder for perf daemon
+    mkdir /data/misc/perfd 0755 root system
+    chmod 2755 /data/misc/perfd
     mkdir /data/system/perfd 0770 root system
     chmod 2770 /data/system/perfd
 
@@ -495,7 +497,6 @@ service perfd /system/vendor/bin/perfd
     user root
     group system
     writepid /dev/cpuset/system-background/tasks
-    socket perfd seqpacket 0666 root system
 
 service per_mgr /system/bin/pm-service
     class core
