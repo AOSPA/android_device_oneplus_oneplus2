@@ -161,8 +161,8 @@ BOARD_SEPOLICY_DIRS += $(PLATFORM_PATH)/sepolicy
 # Time services
 BOARD_USES_QC_TIME_SERVICES := true
 
-# CM Hardware
-TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/double_tap_enable"
+# Gestures
+TARGET_GESTURES_NODE := "/proc/touchpanel/gesture_enable"
 
 # inherit from the proprietary version
 -include vendor/oneplus/oneplus2/BoardConfigVendor.mk
