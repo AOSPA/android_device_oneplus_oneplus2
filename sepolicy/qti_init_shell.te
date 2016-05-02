@@ -1,5 +1,5 @@
 allow qti_init_shell bluetooth_loader_exec:file { read open };
 allow qti_init_shell kmsg_device:chr_file { write open };
 allow qti_init_shell smem_log_device:chr_file { read write ioctl open };
-allow qti_init_shell unlabeled:dir search;
-allow qti_init_shell unlabeled:file { read getattr };
+allow qti_init_shell unlabeled:dir { search getattr };
+allow qti_init_shell unlabeled:file { read getattr setattr };
