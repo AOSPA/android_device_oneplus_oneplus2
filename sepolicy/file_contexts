@@ -15,4 +15,3 @@
 /dev/stm_sensor                                                 u:object_r:stm_sensor:s0
 
 /data/oemnvitems(/.*)?                                          u:object_r:nv_data_file:s0
-/data/misc/perfd(/.*)?                                          u:object_r:mpctl_socket:s0
