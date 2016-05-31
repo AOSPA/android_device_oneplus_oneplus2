@@ -1,1 +1,0 @@
-allow init shell_data_file:lnk_file getattr;
