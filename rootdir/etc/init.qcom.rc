@@ -486,6 +486,7 @@ service perfd /system/vendor/bin/perfd
     user root
     group system
     socket perfd seqpacket 0666 root system
+    disabled
 
 service per_mgr /system/bin/pm-service
     class core
