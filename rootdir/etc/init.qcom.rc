@@ -193,10 +193,8 @@ on early-boot
     write /sys/block/mmcblk0/queue/read_ahead_kb 2048
     write /sys/kernel/boot_adsp/boot 1
 
-on late_start
-    start qcom-power
-
 on boot
+    start qcom-power
     start rmt_storage
     start rfs_access
 
