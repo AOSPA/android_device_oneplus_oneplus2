@@ -56,7 +56,10 @@ done
 
 # Pick up overlay for features that depend on non-open-source files
 PRODUCT_PACKAGES += \\
-    CNEService
+    CNEService \\
+    com.qti.dpmframework \\
+    dpmapi \\
+    fastdormancy
 
 PRODUCT_PACKAGES += \\
     qcrilmsgtunnel \\
@@ -153,6 +156,16 @@ include \$(CLEAR_VARS)
 LOCAL_MODULE := QtiTelephonyService
 LOCAL_MODULE_OWNER := $VENDOR
 LOCAL_SRC_FILES := proprietary/app/QtiTelephonyService/QtiTelephonyService.apk
+LOCAL_MODULE_TAGS := optional
+LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
+LOCAL_MODULE_CLASS := APPS
+LOCAL_CERTIFICATE := platform
+include \$(BUILD_PREBUILT)
+
+include \$(CLEAR_VARS)
+LOCAL_MODULE := fastdormancy
+LOCAL_MODULE_OWNER := $VENDOR
+LOCAL_SRC_FILES := proprietary/app/fastdormancy/fastdormancy.apk
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_SUFFIX := \$(COMMON_ANDROID_PACKAGE_SUFFIX)
 LOCAL_MODULE_CLASS := APPS
