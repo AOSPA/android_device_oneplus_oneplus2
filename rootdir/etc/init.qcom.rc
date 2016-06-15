@@ -83,26 +83,6 @@ on init
     chown system system /sys/class/leds/led:torch_1/brightness
     chmod 0666 /sys/class/leds/led:torch_1/brightness
 
-    # Touchscreen
-    chown system radio /proc/touchpanel/double_tap_enable
-    chmod 0660 /proc/touchpanel/double_tap_enable
-
-    # Buttons
-    chown root system /proc/s1302/key_rep
-    chmod 0660 /proc/s1302/key_rep
-
-    chown root system /proc/s1302/virtual_key
-    chmod 0660 /proc/s1302/virtual_key
-
-    chown root system /proc/tri-state-key/keyCode_top
-    chmod 0660 /proc/tri-state-key/keyCode_top
-
-    chown root system /proc/tri-state-key/keyCode_middle
-    chmod 0660 /proc/tri-state-key/keyCode_middle
-
-    chown root system /proc/tri-state-key/keyCode_bottom
-    chmod 0660 /proc/tri-state-key/keyCode_bottom
-
     # PCC Calibration
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 0660 /sys/devices/virtual/graphics/fb0/rgb
