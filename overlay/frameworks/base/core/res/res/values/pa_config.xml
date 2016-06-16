@@ -87,7 +87,7 @@
 
     <integer name="config_drawVDefault">2</integer>
 
-    <integer name="config_drawInverseVDefault">3</integer>
+    <integer name="config_drawInverseVDefault">0</integer>
 
     <integer name="config_drawODefault">7</integer>
 
