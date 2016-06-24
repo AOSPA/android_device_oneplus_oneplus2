@@ -26,6 +26,7 @@ persist.data.qmi.adb_logmask=0
 persist.radio.sw_mbn_update=0
 persist.radio.start_ota_daemon=1
 persist.radio.rat_on=combine
+persist.env.fastdorm.enabled=true
 
 # Audio
 audio.offload.video=true
@@ -78,11 +79,6 @@ dalvik.vm.heapsize=512m
 dalvik.vm.heaptargetutilization=0.75
 dalvik.vm.heapminfree=512k
 dalvik.vm.heapmaxfree=8m
-
-# Data Power Manager (DPM)
-persist.dpm.feature=7
-persist.env.fastdorm.enabled=true
-persist.sys.dpmd.nsrm=3
 
 # Dexopt
 dalvik.vm.dex2oat-threads=2
