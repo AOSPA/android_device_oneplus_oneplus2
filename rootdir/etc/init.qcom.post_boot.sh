@@ -60,7 +60,7 @@ case "$target" in
          echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_sched_load
          echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/use_migration_notif
          echo "19000 960000:39000 1248000:29000" > /sys/devices/system/cpu/cpu0/cpufreq/interactive/above_hispeed_delay
-         echo 99 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
+         echo 95 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/go_hispeed_load
          echo 19000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/timer_rate
          echo 960000 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/hispeed_freq
          echo 1 > /sys/devices/system/cpu/cpu0/cpufreq/interactive/io_is_busy
@@ -113,9 +113,9 @@ case "$target" in
          echo 40 > /sys/module/cpu_boost/parameters/input_boost_ms
          # configure core_ctl module parameters
          echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/max_cpus
-         echo 0 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
-         echo 69 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
-         echo 31 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
+         echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/min_cpus
+         echo 70 > /sys/devices/system/cpu/cpu4/core_ctl/busy_up_thres
+         echo 30 > /sys/devices/system/cpu/cpu4/core_ctl/busy_down_thres
          echo 100 > /sys/devices/system/cpu/cpu4/core_ctl/offline_delay_ms
          echo 1 > /sys/devices/system/cpu/cpu4/core_ctl/is_big_cluster
          echo 4 > /sys/devices/system/cpu/cpu4/core_ctl/task_thres
@@ -131,8 +131,8 @@ case "$target" in
          echo 30 > /proc/sys/kernel/sched_small_task
          echo 20 > /proc/sys/kernel/sched_mostly_idle_load
          echo 3 > /proc/sys/kernel/sched_mostly_idle_nr_run
-         echo 99 > /proc/sys/kernel/sched_upmigrate
-         echo 85 > /proc/sys/kernel/sched_downmigrate
+         echo 95 > /proc/sys/kernel/sched_upmigrate
+         echo 75 > /proc/sys/kernel/sched_downmigrate
          echo 400000 > /proc/sys/kernel/sched_freq_inc_notify
          echo 400000 > /proc/sys/kernel/sched_freq_dec_notify
          echo 0 > /proc/sys/kernel/sched_boost
